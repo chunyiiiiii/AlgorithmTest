@@ -35,20 +35,23 @@
             this.labelX = new System.Windows.Forms.Label();
             this.labelY = new System.Windows.Forms.Label();
             this.panelBoard = new System.Windows.Forms.Panel();
-
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSize)).BeginInit();
             this.SuspendLayout();
-
+            // 
             // splitContainer
+            // 
             this.splitContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.splitContainer.Name = "splitContainer";
             this.splitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            // 
             // splitContainer.Panel1
+            // 
             this.splitContainer.Panel1.Controls.Add(this.buttonStart);
             this.splitContainer.Panel1.Controls.Add(this.numericUpDownSize);
             this.splitContainer.Panel1.Controls.Add(this.buttonRandomSpecial);
@@ -57,30 +60,37 @@
             this.splitContainer.Panel1.Controls.Add(this.buttonSetSpecial);
             this.splitContainer.Panel1.Controls.Add(this.labelX);
             this.splitContainer.Panel1.Controls.Add(this.labelY);
+            // 
             // splitContainer.Panel2
+            // 
             this.splitContainer.Panel2.Controls.Add(this.panelBoard);
-            this.splitContainer.Size = new System.Drawing.Size(800, 800);
-            this.splitContainer.SplitterDistance = 100;
+            this.splitContainer.Size = new System.Drawing.Size(1067, 923);
+            this.splitContainer.SplitterDistance = 115;
+            this.splitContainer.SplitterWidth = 5;
             this.splitContainer.TabIndex = 0;
-
+            // 
             // buttonStart
-            this.buttonStart.Location = new System.Drawing.Point(12, 12);
+            // 
+            this.buttonStart.Location = new System.Drawing.Point(13, 46);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 23);
+            this.buttonStart.Size = new System.Drawing.Size(100, 27);
             this.buttonStart.TabIndex = 0;
             this.buttonStart.Text = "Start";
             this.buttonStart.UseVisualStyleBackColor = true;
             this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
-
+            // 
             // numericUpDownSize
-            this.numericUpDownSize.Location = new System.Drawing.Point(93, 15);
+            // 
+            this.numericUpDownSize.Location = new System.Drawing.Point(121, 46);
+            this.numericUpDownSize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.numericUpDownSize.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.numericUpDownSize.Name = "numericUpDownSize";
-            this.numericUpDownSize.Size = new System.Drawing.Size(45, 20);
+            this.numericUpDownSize.Size = new System.Drawing.Size(60, 25);
             this.numericUpDownSize.TabIndex = 1;
             this.numericUpDownSize.Value = new decimal(new int[] {
             3,
@@ -88,66 +98,82 @@
             0,
             0});
             this.numericUpDownSize.ValueChanged += new System.EventHandler(this.numericUpDownSize_ValueChanged);
-
+            // 
             // buttonRandomSpecial
-            this.buttonRandomSpecial.Location = new System.Drawing.Point(144, 12);
+            // 
+            this.buttonRandomSpecial.Location = new System.Drawing.Point(189, 46);
+            this.buttonRandomSpecial.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonRandomSpecial.Name = "buttonRandomSpecial";
-            this.buttonRandomSpecial.Size = new System.Drawing.Size(128, 23);
+            this.buttonRandomSpecial.Size = new System.Drawing.Size(171, 27);
             this.buttonRandomSpecial.TabIndex = 2;
             this.buttonRandomSpecial.Text = "Random Special Point";
             this.buttonRandomSpecial.UseVisualStyleBackColor = true;
             this.buttonRandomSpecial.Click += new System.EventHandler(this.buttonRandomSpecial_Click);
-
+            // 
             // textBoxSpecialX
-            this.textBoxSpecialX.Location = new System.Drawing.Point(278, 14);
+            // 
+            this.textBoxSpecialX.Location = new System.Drawing.Point(461, 46);
+            this.textBoxSpecialX.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxSpecialX.Name = "textBoxSpecialX";
-            this.textBoxSpecialX.Size = new System.Drawing.Size(30, 20);
+            this.textBoxSpecialX.Size = new System.Drawing.Size(39, 25);
             this.textBoxSpecialX.TabIndex = 3;
-
+            // 
             // textBoxSpecialY
-            this.textBoxSpecialY.Location = new System.Drawing.Point(334, 14);
+            // 
+            this.textBoxSpecialY.Location = new System.Drawing.Point(399, 46);
+            this.textBoxSpecialY.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textBoxSpecialY.Name = "textBoxSpecialY";
-            this.textBoxSpecialY.Size = new System.Drawing.Size(30, 20);
+            this.textBoxSpecialY.Size = new System.Drawing.Size(39, 25);
             this.textBoxSpecialY.TabIndex = 4;
-
+            // 
             // buttonSetSpecial
-            this.buttonSetSpecial.Location = new System.Drawing.Point(370, 12);
+            // 
+            this.buttonSetSpecial.Location = new System.Drawing.Point(508, 46);
+            this.buttonSetSpecial.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.buttonSetSpecial.Name = "buttonSetSpecial";
-            this.buttonSetSpecial.Size = new System.Drawing.Size(75, 23);
+            this.buttonSetSpecial.Size = new System.Drawing.Size(100, 27);
             this.buttonSetSpecial.TabIndex = 5;
             this.buttonSetSpecial.Text = "Set Special";
             this.buttonSetSpecial.UseVisualStyleBackColor = true;
             this.buttonSetSpecial.Click += new System.EventHandler(this.buttonSetSpecial_Click);
-
+            // 
             // labelX
+            // 
             this.labelX.AutoSize = true;
-            this.labelX.Location = new System.Drawing.Point(266, 17);
+            this.labelX.Location = new System.Drawing.Point(368, 52);
+            this.labelX.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelX.Name = "labelX";
-            this.labelX.Size = new System.Drawing.Size(14, 13);
+            this.labelX.Size = new System.Drawing.Size(23, 15);
             this.labelX.TabIndex = 6;
-            this.labelX.Text = "X";
-
+            this.labelX.Text = "X:";
+            // 
             // labelY
+            // 
             this.labelY.AutoSize = true;
-            this.labelY.Location = new System.Drawing.Point(318, 17);
+            this.labelY.Location = new System.Drawing.Point(438, 52);
+            this.labelY.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelY.Name = "labelY";
-            this.labelY.Size = new System.Drawing.Size(14, 13);
+            this.labelY.Size = new System.Drawing.Size(23, 15);
             this.labelY.TabIndex = 7;
-            this.labelY.Text = "Y";
-
+            this.labelY.Text = "Y:";
+            // 
             // panelBoard
+            // 
             this.panelBoard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelBoard.Location = new System.Drawing.Point(0, 0);
+            this.panelBoard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panelBoard.Name = "panelBoard";
-            this.panelBoard.Size = new System.Drawing.Size(800, 696);
+            this.panelBoard.Size = new System.Drawing.Size(1067, 803);
             this.panelBoard.TabIndex = 0;
             this.panelBoard.Paint += new System.Windows.Forms.PaintEventHandler(this.panelBoard_Paint);
-
+            // 
             // MainForm
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 800);
+            this.ClientSize = new System.Drawing.Size(1067, 923);
             this.Controls.Add(this.splitContainer);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "MainForm";
             this.Text = "Chessboard Covering";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.MainForm_Paint);
@@ -159,6 +185,7 @@
             this.splitContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSize)).EndInit();
             this.ResumeLayout(false);
+
         }
     }
 }
